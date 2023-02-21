@@ -1,0 +1,174 @@
+@font-face {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/robotomono/v22/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_gPq_ROW4AJi8SJQt.woff2) format('woff2');
+}
+
+body{
+    background-color:ghostwhite;
+    margin: 0;
+}
+
+header,nav{
+    background-color:steelblue;
+    padding: 1em;
+}
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly
+    
+}
+
+h1, h2, h3, nav, p, li{
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1{
+    text-align: center;
+    padding: 10px;
+}
+
+h1, h2{
+    text-decoration: underline;
+}
+
+p{
+    font-size: 1.4em;
+    margin: 0;
+}
+
+ul{
+    font-size: 20px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr, 1fr ;
+    gap: 0.8em;
+    
+}
+
+img{
+    display: block;
+    padding: 10px;
+    height: auto;
+    max-width: 100%;
+}
+section {
+    padding: 2em;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+a{
+    font-family: 'Roboto Mono';
+    font-size: 25px;
+}
+
+a:link {
+    color:white;
+    text-decoration:underline;
+    
+}
+
+a:visited {
+    color:black;
+    text-decoration:underline;   
+}
+
+a:hover{
+    opacity: 0.6;
+    color:darkgray;
+    text-decoration:underline;
+}
+
+a:active{
+    color:slateblue
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: steelblue;
+}
+
+
+@media (max-width: 30em) {
+
+    nav {
+      flex-direction: column;
+      font-size: 16px;
+    }
+  
+    a{
+        font-size: 20px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    p{
+        font-size: 0.9em;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 17px;
+    }
+
+    h3{
+        font-size: 14px;
+    }
+
+   li{
+    font-size: 14px;
+   }
+}
+
+  @media (min-width: 45em) {
+  
+    main {
+      grid-template-columns: 1fr 1fr;
+    }
+
+  }
+
+  @media only screen and (prefers-color-scheme: dark) {
+    body {
+      background-color: black;
+      color: white;
+    }
+
+    header,nav{
+        background-color:darkgrey;
+        padding: 1em;
+    }
+
+    img {
+        opacity: 0.8; 
+    }
+
+    footer{
+        background-color: darkgray ;
+    }
+
+    a:hover{
+        opacity: 0.6;
+        color:cadetblue;
+        text-decoration:underline;
+    }
+
+    a:active{
+        color: darkolivegreen;
+    }
+
+}
+
